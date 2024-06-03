@@ -1,4 +1,4 @@
-body {
+body{
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -7,20 +7,18 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-label {
+label{
     width: 500px;
     height: 200px;
     position: relative;
     display: block;
     background: #ebebeb;
     border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, .4), inset 0px -5px 15px rgba(255, 255, 255, .4);
     cursor: pointer;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
-
-label:after {
+label:after{
     content: "";
     width: 180px;
     height: 180px;
@@ -28,65 +26,59 @@ label:after {
     top: 10px;
     left: 10px;
     background: linear-gradient(180deg, #ffcc89, #d8860b);
-    border-radius: 50%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    transition: left 0.3s, background 0.3s, width 0.3s;
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    transition: 0.3s;
 }
-
-input {
+input{
     width: 0;
     height: 0;
-    visibility: hidden;
+    visibility: hidden; 
 }
-
-input:checked + label {
+input:checked + label{
     background: #242424;
 }
-
-input:checked + label:after {
-    left: calc(100% - 190px);
-    background: linear-gradient(180deg, #777, #3a3a3a);
+input:checked + label:after{
+    left: 490px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg, #777, #3a3a3a );
 }
-
-label:active:after {
+label, label:after{
+    transition: 0.3s;
+}
+label:active:after{
     width: 260px;
 }
-
-.fundo {
+.fundo{
     width: 100vw;
     height: 100vh;
     background: #fff;
     z-index: -1;
     position: absolute;
-    transition: background-color 0.3s;
+    transition: 0.3;
 }
-
-input:checked + label + .fundo {
+input:checked + label + .fundo{
     background-color: #242424;
 }
-
-label img {
+label img{
     position: absolute;
     width: 120px;
     top: 40px;
     z-index: 100;
-    transition: left 0.3s, fill 0.3s;
 }
-
-label img.sol {
+label img.sol{
     left: 40px;
     fill: #fff;
+    transition: 0.3s;
 }
-
-label img.lua {
+label img.lua{
     left: 340px;
     fill: #7e7e7e;
+    transition: 0.3s;
 }
-
-input:checked + label img.sol {
+input:checked + label img .sol{
     fill: #7e7e7e;
 }
-
-input:checked + label img.lua {
+input:checked + label img .lua{
     fill: #fff;
-}
+} 
