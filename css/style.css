@@ -65,6 +65,7 @@ label img{
     width: 120px;
     top: 40px;
     z-index: 100;
+    pointer-events: none;
 }
 label img.sol{
     left: 40px;
