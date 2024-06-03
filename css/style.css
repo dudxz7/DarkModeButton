@@ -77,9 +77,9 @@ label img.lua{
     fill: #7e7e7e;
     transition: 0.3s;
 }
-input:checked + label img .sol{
+input:checked + label img.sol{
     fill: #7e7e7e;
 }
-input:checked + label img .lua{
+input:checked + label img.lua{
     fill: #fff;
 } 
