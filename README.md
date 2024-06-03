@@ -1,0 +1,2 @@
+<h1 align="center">Alternância de Modo Claro/Escuro com CSS e HTML☀️🌛</h1>
+<p>Este projeto é um exemplo de implementação de um botão de alternância para mudar entre os modos claro e escuro em uma página web. Utiliza HTML e CSS para criar um botão estilizado e funcional, que altera o tema da página ao ser clicado. A interface do usuário inclui ícones que representam o sol e a lua, proporcionando uma experiência visual intuitiva.</p>
